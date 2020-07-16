@@ -1,8 +1,9 @@
-##### ~/code/tests/PYTHON/testdriven-app/services/users$ 
+##### ~/testdriven-app/services/users$ 
 ```bash
-python3 -m venv env
+python3 -m venv env # at first run after repo cloning
 source env/bin/activate
 (env)$ export FLASK_APP=project/__init__.py
+(env)$ export FLASK_DEBUG=1
 (env)$ python manage.py run
 ```
 
