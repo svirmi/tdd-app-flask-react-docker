@@ -15,3 +15,13 @@ pip3 install -r requirements.txt
 "status": "success"
 }
 ```
+
+##### To build the image run from project root folder
+```bash
+docker-compose -f docker-compose-dev.yml build
+```
+
+##### To spin up the container, run
+```bash
+docker-compose -f docker-compose-dev.yml up -d
+```
