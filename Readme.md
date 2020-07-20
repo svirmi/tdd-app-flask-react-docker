@@ -16,7 +16,7 @@ pip3 install -r requirements.txt
 }
 ```
 
-##### To build the image run from project root folder
+##### To build the image run from project root folder (~/testdriven-app/)
 ```bash
 docker-compose -f docker-compose-dev.yml build
 ```
