@@ -8,7 +8,7 @@ pip3 install -r requirements.txt
 (env)$ python manage.py run
 ```
 
-##### Navigate to http://localhost:5000/users/ping in your browser. You should see:
+##### Navigate to http://localhost:5001/users/ping in your browser. You should see:
 ```bash
 {
 "message": "pong!",
@@ -24,4 +24,9 @@ docker-compose -f docker-compose-dev.yml build
 ##### To spin up the container, run
 ```bash
 docker-compose -f docker-compose-dev.yml up -d
+```
+
+##### To enter postgres container run
+```bash
+docker exec -ti $(docker ps -aqf "name=users-db") psql -U postgres
 ```
