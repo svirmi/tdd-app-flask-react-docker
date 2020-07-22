@@ -30,3 +30,13 @@ docker-compose -f docker-compose-dev.yml up -d
 ```bash
 docker exec -ti $(docker ps -aqf "name=users-db") psql -U postgres
 ```
+
+##### To rebuild and run container at dev environment, run 
+```bash
+docker-compose -f docker-compose-dev.yml up -d --build
+```
+
+##### To run tests:
+```bash
+docker-compose -f docker-compose-dev.yml run users python manage.py test
+```
